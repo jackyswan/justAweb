@@ -1,4 +1,2 @@
 # justAweb
-ignore it It's nothing
-//这是介绍
-//这只是个网站学习模版
+code文件夹中为网页全部文件，包括HTML、CSS、JS以及字体、图片库等。
