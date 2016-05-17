@@ -1,6 +1,10 @@
 /*2016.5.12 lwq V1.0*/
 /*基本设置*/
-ul,li,menu,nav,body,html,div,span,a,em,img,q,s,u,i,center{
+/*追加声明*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,
+q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,
+tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,
+mark,audio,video{
     margin:0;
     padding:0;
     border:0;
@@ -9,7 +13,7 @@ ul,li,menu,nav,body,html,div,span,a,em,img,q,s,u,i,center{
     vertical-align: baseline;
 }
 
-menu,nav{
+article.aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
     display:block;
 }
 body{
@@ -18,7 +22,17 @@ body{
 ol,ul{
     list-style: none;
 }
-
+blockquote,q{
+    quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after{
+    content:'';
+    content:none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 /* -------------Default Styles---------------*/
 body{
     background:url("") /*默认背景设置,背景图片后续添加到img中*/
@@ -74,4 +88,13 @@ nav{
 }
 .menu ul a{
     white-space: nowrap;
+}
+
+
+.menu li:hover ul{
+    background: rgba(255,255,255,0.7);
+    border-radius:0 0 6px 6px;
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.4);
+    left: 5px;
+    opacity: 1;
 }
