@@ -1,0 +1,14 @@
+/*头部导航样式*/
+.banner-background{
+    background: url("../images/backgroung.jpg");
+}
+.nav-back{
+    background-color: #FFFFFF;
+    padding:0 50px 0 50px;
+}
+.navbar-default{
+    background-color: transparent !important;
+    border:none !important;
+    min-height: 90px;
+    margin-bottom:0;
+}
